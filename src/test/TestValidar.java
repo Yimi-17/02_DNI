@@ -15,4 +15,27 @@ class TestValidar {
 		assertEquals(true,v1.validar("71525409"));
 
 	}
+	@Test
+	void testDni2() {
+		validar v1=new validar();
+		assertEquals(false,v1.validar("001525409"));
+
+	}
+	
+	@Test
+	void testDni3() {
+		validar v1=new validar();
+		assertEquals(false,v1.validar("0000"));
+
+	}
+	
+	@Test
+	void testDni4() {
+		validar v1=new validar();
+		assertEquals(false,v1.validar("wreger"));
+
+	}
+	
+	
 }
+
